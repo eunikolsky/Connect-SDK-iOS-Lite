@@ -53,6 +53,7 @@
 		446DB82E1A25596800D2359E /* MediaInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 446DB82C1A25596800D2359E /* MediaInfo.m */; };
 		446DB8321A2559CC00D2359E /* ImageInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 446DB8301A2559CC00D2359E /* ImageInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		446DB8331A2559CC00D2359E /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 446DB8311A2559CC00D2359E /* ImageInfo.m */; };
+		4477FE9D1A6ECB4900657D75 /* GcovTestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4477FE9C1A6ECB4900657D75 /* GcovTestObserver.m */; };
 		448486271A7883E90013367E /* PlayListControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 448486261A7883E90013367E /* PlayListControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4484862A1A78840D0013367E /* MediaLaunchObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 448486281A78840D0013367E /* MediaLaunchObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4484862B1A78840D0013367E /* MediaLaunchObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 448486291A78840D0013367E /* MediaLaunchObject.m */; };
@@ -307,6 +308,7 @@
 		446DB82C1A25596800D2359E /* MediaInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaInfo.m; sourceTree = "<group>"; };
 		446DB8301A2559CC00D2359E /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
 		446DB8311A2559CC00D2359E /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
+		4477FE9C1A6ECB4900657D75 /* GcovTestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GcovTestObserver.m; sourceTree = "<group>"; };
 		448486261A7883E90013367E /* PlayListControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayListControl.h; sourceTree = "<group>"; };
 		448486281A78840D0013367E /* MediaLaunchObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaLaunchObject.h; sourceTree = "<group>"; };
 		448486291A78840D0013367E /* MediaLaunchObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaLaunchObject.m; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 		4484863B1A7884510013367E /* ssdp_device_description_xbox.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ssdp_device_description_xbox.xml; sourceTree = "<group>"; };
 		4484863C1A7884510013367E /* ssdp_device_description.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ssdp_device_description.xml; sourceTree = "<group>"; };
 		4484863E1A7884510013367E /* ssdp_device_description_webos_minor_webos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ssdp_device_description_webos_minor_webos.xml; sourceTree = "<group>"; };
+		4484868E1A7C49700013367E /* Debug_ccov.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug_ccov.xcconfig; sourceTree = "<group>"; };
 		449D5D601A6F1AE10072DD36 /* SSDPDiscoveryProvider_FilteringTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDPDiscoveryProvider_FilteringTests.m; sourceTree = "<group>"; };
 		44CEF58D1A43593700D069C8 /* AirPlayServiceHTTPKeepAlive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayServiceHTTPKeepAlive.h; sourceTree = "<group>"; };
 		44CEF58E1A43593700D069C8 /* AirPlayServiceHTTPKeepAlive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayServiceHTTPKeepAlive.m; sourceTree = "<group>"; };
@@ -536,6 +539,8 @@
 				445822A01A6DA06200444188 /* Helpers */,
 				44CEF5911A43598F00D069C8 /* Services */,
 				44375E931A2526F800D2F6DE /* Info.plist */,
+				4477FE9C1A6ECB4900657D75 /* GcovTestObserver.m */,
+				4484868E1A7C49700013367E /* Debug_ccov.xcconfig */,
 			);
 			path = ConnectSDKTests;
 			sourceTree = "<group>";
@@ -1324,6 +1329,7 @@
 				445822A51A6DA09900444188 /* NSDictionary+KeyPredicateSearchTests.m in Sources */,
 				445822A41A6DA09400444188 /* DLNAHTTPServerTests.m in Sources */,
 				449D5D641A6F1AE10072DD36 /* SSDPDiscoveryProvider_FilteringTests.m in Sources */,
+				4477FE9D1A6ECB4900657D75 /* GcovTestObserver.m in Sources */,
 				44375E961A2526F800D2F6DE /* SSDPDiscoveryProviderTests.m in Sources */,
 				445822B11A6DA0A500444188 /* DLNAServiceTests.m in Sources */,
 				44375E971A2526F800D2F6DE /* ZeroConfDiscoveryProviderTests.m in Sources */,
@@ -1492,6 +1498,110 @@
 			};
 			name = Release;
 		};
+		4484868A1A7C492E0013367E /* Debug_ccov */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
+			};
+			name = Debug_ccov;
+		};
+		4484868B1A7C492E0013367E /* Debug_ccov */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4484868E1A7C49700013367E /* Debug_ccov.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/Connect_SDK.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/modules/**",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "core/ConnectSDK-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = ConnectSDK;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug_ccov;
+		};
+		4484868C1A7C492E0013367E /* Debug_ccov */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+			};
+			name = Debug_ccov;
+		};
+		4484868D1A7C492E0013367E /* Debug_ccov */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4484868E1A7C49700013367E /* Debug_ccov.xcconfig */;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(PROJECT_DIR)/core/Frameworks/OCMock",
+					"$(PROJECT_DIR)/core/Frameworks/OHHTTPStubs",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "core/ConnectSDKTests/ConnectSDKTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = core/ConnectSDKTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug_ccov;
+		};
 		EA61EB3118FE485B00D75696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1634,6 +1744,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				44375E881A25265600D2F6DE /* Debug */,
+				4484868D1A7C492E0013367E /* Debug_ccov */,
 				44375E891A25265600D2F6DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1643,6 +1754,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA61EB3118FE485B00D75696 /* Debug */,
+				4484868A1A7C492E0013367E /* Debug_ccov */,
 				EA61EB3218FE485B00D75696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1652,6 +1764,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA61EB3418FE485B00D75696 /* Debug */,
+				4484868B1A7C492E0013367E /* Debug_ccov */,
 				EA61EB3518FE485B00D75696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1661,6 +1774,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EECAED54193F611900D31F61 /* Debug */,
+				4484868C1A7C492E0013367E /* Debug_ccov */,
 				EECAED55193F611900D31F61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
